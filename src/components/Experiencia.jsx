@@ -3,10 +3,7 @@ import styled from 'styled-components';
 
 const Experiencia = () => {
     return (
-        <>
-            <div> hola </div>
             <FlexContainer className="container">Experiencia</FlexContainer>
-        </>
     )
 }
 
@@ -18,5 +15,6 @@ const FlexContainer = styled.nav`{
     height: 100vh;
     display:flex;
     justify-content: center;
+    align-items: center;
     background-color: #DDDDDD;
 }`;
