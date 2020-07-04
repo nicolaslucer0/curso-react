@@ -1,0 +1,26 @@
+[
+  {
+    "nombre": "Nicolas",
+    "edad": 26,
+    "sexo": "M",
+    "trabaja": true
+  },
+  {
+    "nombre": "Agustin",
+    "edad": 19,
+    "sexo": "M",
+    "trabaja": true
+  },
+  {
+    "nombre": "Camila",
+    "edad": 20,
+    "sexo": "F",
+    "trabaja": true
+  },
+  {
+    "nombre": "Agustina",
+    "edad": 25,
+    "sexo": "F",
+    "trabaja": true
+  }
+]

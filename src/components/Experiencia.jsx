@@ -1,20 +1,58 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
-const Experiencia = () => {
-    return (
-            <FlexContainer className="container">Experiencia</FlexContainer>
-    )
-}
+// Como importar una imagen?
+import img from "../assets/img/logo.png";
+// const img = require("../assets/img/logo.png");
+
+const Experiencia = ({ titulo, color }) => {
+  return (
+    <FlexContainer className="container">
+      <Card>
+        <Title>{titulo}</Title>
+        <Img src={img} />
+      </Card>
+    </FlexContainer>
+  );
+};
 
 export default Experiencia;
 
-
-const FlexContainer = styled.nav`{
+const FlexContainer = styled.div`
+   {
     width: 100%;
     height: 100vh;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #DDDDDD;
-}`;
+    background-color: #dddddd;
+  }
+`;
+
+const Card = styled.div`
+   {
+    width: 20%;
+    position: relative;
+    border-size: border-box;
+    background: #3366ff;
+    border: 1px solid #dddddd;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 2em;
+  }
+`;
+
+const Img = styled.img`
+   {
+    width: 100%;
+  }
+`;
+
+const Title = styled.h2`
+   {
+  }
+`;
