@@ -7,13 +7,13 @@ const Projects = () => {
   const baseUrl = "https://api.github.com/users/nicolaslucer0/repos";
 
   useEffect(() => {
-    const fetchData = async () => {
+    const traerInformacion = async () => {
       const result = await axios(baseUrl);
       setProjects(result.data);
       console.log(result.data);
     };
 
-    fetchData();
+    traerInformacion();
   }, []);
 
   return (
@@ -21,7 +21,7 @@ const Projects = () => {
       <FlexContainerColumn id="projects">
         <FlexContainerRow>
           {projects.map((project) => (
-            <Project key={project.name}>
+            <Project key={project.created_at}>
               <a
                 target="_blank"
                 rel="noopener noreferrer"

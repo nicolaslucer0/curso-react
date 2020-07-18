@@ -11,7 +11,7 @@ const Contacto = () => {
         <Button onClick={() => setColor("verde")}>Cambiar a verde</Button>
         <Button onClick={() => setColor("rojo")}>Cambiar a rojo</Button>
       </FlexContainerColumn>
-      <Button onClick={() => setColor("white")}>Resetear</Button>
+      <Button onClick={() => setColor("blanco")}>Resetear</Button>
     </FlexContainerRow>
   );
 };

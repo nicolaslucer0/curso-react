@@ -47,8 +47,8 @@ const FlexContainerColumn = styled.nav`
     height: 100vh;
     display: flex;
     justify-content: center;
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
     background-color: #eeeeee;
   }
 `;

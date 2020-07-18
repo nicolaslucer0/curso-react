@@ -2,15 +2,15 @@ import React from "react";
 import styled from "styled-components";
 
 // Como importar una imagen?
-import img from "../assets/img/logo.png";
-// const img = require("../assets/img/logo.png");
+//import img from "../assets/img/logo.png";
+//const img = require("../assets/img/logo.png");
 
 const Experiencia = ({ titulo, color }) => {
   return (
     <FlexContainer className="container">
       <Card>
         <Title>{titulo}</Title>
-        <Img src={img} />
+        <Img src={require("../assets/img/logo.png")} />
       </Card>
     </FlexContainer>
   );
